@@ -254,9 +254,6 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="bg-slate-100 border-b-2 text-center p-3">
-        Powered by Replicate. <CTA shortenedModelName={model.shortened} />
-      </div>
       <nav className="grid grid-cols-2 pt-3 pl-6 pr-3 sm:grid-cols-3 sm:pl-0">
         <div className="hidden sm:inline-block"></div>
         <div className="font-semibold text-gray-500 sm:text-center">
@@ -264,7 +261,7 @@ export default function HomePage() {
             ? "🌋"
             : model.shortened == "Salmonn"
             ? "🐟"
-            : "🦙"}{" "}
+            : "🐱"}{"a"}
           <span className="hidden sm:inline-block">Chat with</span>{" "}
           <button
             className="py-2 font-semibold text-gray-500 hover:underline"
@@ -276,16 +273,6 @@ export default function HomePage() {
           </button>
         </div>
         <div className="flex justify-end">
-          <a
-            className="inline-flex items-center px-3 py-2 mr-3 text-sm font-semibold text-gray-700 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-            href="https://github.com/replicate/chat"
-          >
-            <CodeBracketIcon
-              className="w-5 h-5 text-gray-500 sm:mr-2 group-hover:text-gray-900"
-              aria-hidden="true"
-            />{" "}
-            <span className="hidden sm:inline">Clone on GitHub</span>
-          </a>
           <button
             type="button"
             className="inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
