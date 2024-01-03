@@ -261,7 +261,7 @@ export default function HomePage() {
             ? "🌋"
             : model.shortened == "Salmonn"
             ? "🐟"
-            : "🐱"}{"a"}
+            : "🐱"}{" "}
           <span className="hidden sm:inline-block">Chat with</span>{" "}
           <button
             className="py-2 font-semibold text-gray-500 hover:underline"
